@@ -1,0 +1,68 @@
+.container {
+  /* background-image: url(media/clouds);*/
+}
+
+.current-temperature {
+  font-size: 100px;
+  text-align: center;
+}
+
+h3 {
+  font-size: large;
+}
+
+h4 {
+  font-size: x-small;
+}
+
+ul {
+  font-size: 7px;
+  list-style: none;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(56, 153, 143, 0.2);
+  border-radius: 6px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#search-bar {
+  margin: 20px 55px;
+}
+
+#search-button {
+  background-color: rgb(56, 153, 143);
+  border-color: rgb(56, 153, 143);
+  color: white;
+}
+
+#today {
+  padding: 20px 12px 20px 12px;
+  text-align: center;
+}
+
+#main-emoji {
+  font-size: 40px;
+  text-align: center;
+}
+
+.upcoming-weather {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+#add-city {
+  background-color: rgb(56, 153, 143);
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  font-family: monospace;
+  font-size: 8px;
+  margin: 16px;
+  text-align: center;
+}

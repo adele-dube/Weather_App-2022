@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather App UI</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body shadow">
+          <form class="d-flex" role="search" id="search-bar">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="search-input"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              id="search-button"
+            >
+              Search
+            </button>
+          </form>
+
+          <div class="row justify-content-center">
+            <div
+              class="col align-self-center"
+              name="main-emoji"
+              id="main-emoji"
+            >
+              🌦
+            </div>
+
+            <div class="col align-self-center" name="today" id="today">
+              <div class="heading">
+                <h3 class="current-city">Nicosia</h3>
+                <span class="current-temperature" id="current-temp">23</span>
+                <span id="units">°C</span>
+                <h4 class="today-date">Thursday, 23/06/22</h4>
+              </div>
+            </div>
+
+            <div
+              class="col align-self-center"
+              name="today-details"
+              id="today-details"
+            >
+              <ul>
+                <li>23°C / 38°C</li>
+                <li>Windspeed: 19.6km/h</li>
+                <li>Humidity: 47%</li>
+                <li>Chance of rain: 80%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="upcoming-weather">
+            <div class="card">
+              <div class="card-body">⛅ Friday 23°C / 38°C</div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">⛈ Saturday 20°C / 30°C</div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">🌤 Sunday 25°C / 35°C</div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">🌥 Monday 23°C / 34°C</div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">🌤 Tuesday 22°C / 38°C</div>
+            </div>
+          </div>
+
+          <button type="NEbutton" class="btn btn-primary" id="add-city">
+            Current City
+          </button>
+
+          <p class="footer">Coded by Adele_D ©2022</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
